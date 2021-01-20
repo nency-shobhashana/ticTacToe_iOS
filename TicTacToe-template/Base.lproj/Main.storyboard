@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q2o-te-CwK">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q2o-te-CwK">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="RoO-p4-1sB">
             <objects>
-                <viewController id="q2o-te-CwK" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q2o-te-CwK" customClass="ViewController" customModule="TicTacToe_template" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OuD-me-M3Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +32,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="e16-va-W6j"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="wRK-Ga-wMU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25b-iv-cRG">
@@ -36,6 +40,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="zbr-av-url"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="7Pl-xI-AIz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQy-eF-Qif">
@@ -43,6 +48,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="wKQ-M0-fBb"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="Ua5-R1-03I"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -55,6 +61,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="sLd-7y-3kL"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="R0j-wK-5qo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyS-no-ZbB">
@@ -62,6 +69,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="aRx-81-kWA"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="uEP-e7-EFQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUa-vk-TYm">
@@ -69,6 +77,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="vtk-kh-4hw"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="AbB-gw-hHZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -81,6 +90,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="qMG-lo-43y"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="W9L-rR-i9e"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB9-ga-hHg">
@@ -88,6 +98,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="kEA-cn-q4g"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="L86-dw-ydE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-wf-0HI">
@@ -95,6 +106,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="btnPressed:" destination="q2o-te-CwK" eventType="touchUpInside" id="129-dL-HD5"/>
+                                                    <action selector="clickSquareBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="Gzz-6L-BAr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -104,7 +116,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejm-fk-chj">
                                 <rect key="frame" x="50" y="125" width="314" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kll-w1-C07">
@@ -113,10 +125,11 @@
                                 <state key="normal" title="Play Again"/>
                                 <connections>
                                     <action selector="playAgain:" destination="q2o-te-CwK" eventType="touchUpInside" id="UPm-Aw-6Q9"/>
+                                    <action selector="playBtn:" destination="q2o-te-CwK" eventType="touchUpInside" id="3Zf-fJ-Rgm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fWQ-mn-oAF" firstAttribute="top" secondItem="4VE-66-j3t" secondAttribute="top" constant="150" id="1xl-EM-Qy3"/>
                             <constraint firstItem="hk8-ll-2qa" firstAttribute="top" secondItem="fWQ-mn-oAF" secondAttribute="top" id="6QB-sB-tbX"/>
@@ -136,7 +149,8 @@
                     </view>
                     <connections>
                         <outlet property="btnPlayAgain" destination="kll-w1-C07" id="Chx-GX-SdZ"/>
-                        <outlet property="resultLabel" destination="ejm-fk-chj" id="WWj-xe-FTv"/>
+                        <outlet property="playBtn" destination="kll-w1-C07" id="wYJ-9x-3nj"/>
+                        <outlet property="resultLabel" destination="ejm-fk-chj" id="vJa-om-7Wd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbF-aQ-ifu" sceneMemberID="firstResponder"/>
